@@ -9,6 +9,7 @@ const routers: Route[] = [
   {path: '', component: HomeComponent },
   {path: 'app2', component: App2Component },
   {path: 'home', component: HomeComponent },
+  // Lazy Loader
   {path: 'lazy', loadChildren:() => import ('./sub1/sub1.module').then(m=> m.Sub1Module ) },
 ];
 
